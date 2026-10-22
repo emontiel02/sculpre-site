@@ -107,6 +107,7 @@ h1, h2, h3 { margin: 0; font-weight: 700; text-wrap: balance; }
 /* Hero */
 .hero { padding: 88px 0 0; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
+.hero .display { font-size: clamp(40px, 5.2vw, 66px); }
 .hero .lead { margin-top: 28px; }
 .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 40px; }
 .cta-note { display: flex; align-items: center; gap: 12px; margin-top: 28px; color: var(--text-2); font-size: 15px; }
