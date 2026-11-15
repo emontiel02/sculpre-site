@@ -48,6 +48,9 @@
     <script>
       // Invite links (sculpre.io/r/CODE from creators and gyms, sculpre.io/t/CODE from trainers) live in the app.
       if (/^\/(r|t)\/[^/]+\/?$/.test(location.pathname)) location.replace('https://emontiel-health.expo.app' + location.pathname.replace(/\/$/, '') + location.search);
+      // A gym's own address, sculpre.io/CODE: its sign-in and dashboard live in the app (/gym/CODE).
+      else if (/^\/gym\/?$/i.test(location.pathname)) location.replace('https://emontiel-health.expo.app/gym');
+      else if (/^\/[A-Za-z0-9]{3,20}\/?$/.test(location.pathname)) location.replace('https://emontiel-health.expo.app/gym/' + location.pathname.replace(/\//g, '').toUpperCase());
     </script>
     <section class="wrap page-head" style="padding-bottom:120px">
       <h1 class="display"><span class="thin">This page</span> <span class="bold">doesn’t exist.</span></h1>
